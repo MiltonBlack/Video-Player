@@ -1,20 +1,11 @@
-import React from 'react';
-import {Router, Routes, Route} from 'react-router-dom'
-import EdTutorPlayer from './components/container/EdTutorPlayer';
-import './App.css';
-import GlobalStyle from './components/styles/GlobalStyle';
+import Home from "./Pages/Home";
 
-function App(props) {
+function App() {
+
   return (
-    <Router>
       <>
-        <Routes>
-          <Route path="/" component={EdTutorPlayer}/>
-          <Route path="/:activevideo" component={EdTutorPlayer}/>
-        </Routes>
-        <GlobalStyle/>
+       <Home/>
       </>
-    </Router>
   );
 }
 
