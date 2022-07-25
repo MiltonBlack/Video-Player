@@ -41,5 +41,6 @@
     width: max-content; 
     margin-top: 10px;
     transform: translateX(0px);
+    transition: all 1s ease;
 /*--gives the original width given to an element when displayed flex--*/
 }
