@@ -1,10 +1,26 @@
 import React from 'react'
 import './Featured.css'
 import { FaPlay, FaInfo } from 'react-icons/fa'
-const Featured = () => {
+const Featured = ({type}) => {
   return (
     <div className='featured'>
+        {type && (<div className='category'> 
+            <span>{type === "movie" ? "Movies" : "Series"}</span>
+            <select name='genre' id='genre'>
+                <option>Genre</option>
+                <option value='kids'>kids</option>
+                <option value='teens'>teens</option>
+                <option value='super-hero'>super Hero</option>
+                <option value='sci-fi'>sci-fi</option>
+                <option value='animation'>animation</option>
+                <option value='adventure'>adventure</option>
+                <option value='fantasy'>fantasy</option>
+                <option value='crime'>crime</option>
+            </select>
+        </div>)}
+        {/*----------Navbar Background tag start----------*/}
         <img src='./img.jpeg' alt=''/>
+        {/*----------Navbar Background end-----------------*/}
         <div className='info'>
             <img src='./img.jpeg' alt=''/>
             <span className='desc'> 
